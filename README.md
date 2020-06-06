@@ -28,7 +28,8 @@ The experimental results were conducted on Nvidia GTX 1080Ti.
 ### Complexity
 |**Model**|**Backbone**|**Scale**|**# of Parameters**|**Avg. FLOPS**|
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-|GSVNet(l=4)|SwiftNet-ResNet18|0.75|48.8M|16.7G|
+|GSVNet(l=2)|SwiftNet-ResNet18|0.75|48.8M|21.3G|
+|GSVNet(l=3)|SwiftNet-ResNet18|0.75|48.8M|16.7G|
 |SwiftNet|ResNet18|0.75|47.2M|58.5G|
 |SwiftNet|ResNet18|0.5|47.2M|26.0G|
 |BiSeNet|ResNet18|0.75|49.0M|58.0G|
