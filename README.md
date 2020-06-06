@@ -8,11 +8,11 @@
 ## Performance and Benchmarks
 
 The experimental results were conducted on Nvidia GTX 1080Ti. 
-Avg. mIoU: the average mIoU over the keyframe and non-keyframes. 
-Min. mIoU: the minimum mIoU among frames. (It should be the last non-keyframe) 
-Scale: The scaling factor of input resolution.
-Avg. Flops: the average floating-point operations per second (FLOPS) over the keyframe and non-keyframes.
-l=K: The number of non-keyframes.
+- Avg. mIoU: the average mIoU over the keyframe and non-keyframes. 
+- Min. mIoU: the minimum mIoU among frames. (It should be the last non-keyframe) 
+- Scale: The scaling factor of input resolution.
+- Avg. Flops: the average floating-point operations per second (FLOPS) over the keyframe and non-keyframes.
+- l=K: The number of non-keyframes.
 
 ### Accuracy vs. Throughput
 #### Cityscapes
