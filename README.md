@@ -6,7 +6,7 @@
 <table>
   <tr>
     <td><b>Model</b></td>
-    <td><b><Method/b></td>
+    <td><b>Method/b></td>
     <td><b>Backbone</b></td>
     <td><b># of Non-keyframes</b></td>
     <td><b>Avg. Mean IoU</b></td>
