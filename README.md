@@ -4,13 +4,15 @@
 
 The experimental results were conducted on Nvidia GTX 1080Ti. 
 Avg. mIoU: the average mIoU over the keyframe and non-keyframes. 
-Min. mIoU:the minimum mIoU among frames. (It should be the last non-keyframe) 
-$\gamma$:
+Min. mIoU: the minimum mIoU among frames. (It should be the last non-keyframe) 
+Scale: The scaling factor of input resolution. 
 
 ### Cityscapes
 
-|**Model**|**Method**|**Backbone**|**# of Non-keyframes**|**Avg. mIoU**|**Min. mIoU**|**FPS**|
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|GSVNet(ours)|Video|SwiftNet-ResNet18|2|72.5|70.5|125|
-|BiSeNet|Image|ResNet-18|
+|**Model**|**Method**|**Backbone**|**Scale**|**# of Non-keyframes**|**Avg. mIoU**|**Min. mIoU**|**FPS**|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|GSVNet(ours)|Video|SwiftNet-ResNet18|0.75|2|72.5|70.5|125|
+|BiSeNet|Image|ResNet-18|0.75|-|73.7|73.7|61|
+|BiSeNet|Image|Xception-39|0.75|-|69.0|69.0|105|
+|SwiftNet|Image|ResNet-18|0.75|-|74.4|74.4|63|
 
