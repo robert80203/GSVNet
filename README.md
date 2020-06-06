@@ -7,7 +7,7 @@ Avg. mIoU: the average mIoU over the keyframe and non-keyframes.
 Min. mIoU: the minimum mIoU among frames. (It should be the last non-keyframe) 
 Scale: The scaling factor of input resolution. 
 
-### Accuray vs. Throughput
+### Accuracy vs. Throughput
 #### Cityscapes
 
 |**Model**|**Method**|**Backbone**|**Scale**|**# of Non-keyframes**|**Avg. mIoU**|**Min. mIoU**|**FPS**|
