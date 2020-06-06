@@ -1,5 +1,10 @@
 # Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video (GSVNet)
 
+## Supported Models
+- [TDNet](https://arxiv.org/abs/2004.01800)
+- [BiSeNet](https://arxiv.org/abs/1808.00897)
+- [SwiftNet](https://arxiv.org/abs/1903.08469)
+
 ## Performance and Benchmarks
 
 The experimental results were conducted on Nvidia GTX 1080Ti. 
