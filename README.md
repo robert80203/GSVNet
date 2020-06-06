@@ -2,6 +2,11 @@
 
 ## Performance and Benchmarks
 
+The experimental results were conducted on Nvidia GTX 1080Ti.
+Avg. mIoU: the average mIoU over the keyframe and non-keyframes.
+Min. mIoU:the minimum mIoU among frames. (It should be the last non-keyframe)
+
+
 ### Cityscapes
 
 |**Model**|**Method**|**Backbone**|**# of Non-keyframes**|**Avg. mIoU**|**Min. mIoU**|**FPS**|
