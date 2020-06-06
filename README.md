@@ -10,17 +10,25 @@
 The experimental results were conducted on Nvidia GTX 1080Ti. 
 Avg. mIoU: the average mIoU over the keyframe and non-keyframes. 
 Min. mIoU: the minimum mIoU among frames. (It should be the last non-keyframe) 
-Scale: The scaling factor of input resolution. 
+Scale: The scaling factor of input resolution.
+Avg. Flops: the average floating-point operations per second (FLOPS) over the keyframe and non-keyframes.
+l=K: The number of non-keyframes.
 
 ### Accuracy vs. Throughput
 #### Cityscapes
 
-|**Model**|**Method**|**Backbone**|**Scale**|**# of Non-keyframes**|**Avg. mIoU**|**Min. mIoU**|**FPS**|
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|GSVNet(ours)|Video|SwiftNet-ResNet18|0.75|2|72.5|70.5|125|
-|TDNet|Video|BiSeNet-ResNet18|0.75|-|75.0|75.0|approx. 61|
-|BiSeNet|Image|ResNet-18|0.75|-|73.7|73.7|61|
-|BiSeNet|Image|Xception-39|0.75|-|69.0|69.0|105|
-|SwiftNet|Image|ResNet-18|0.75|-|74.4|74.4|63|
+|**Model**|**Method**|**Backbone**|**Scale**|**Avg. mIoU**|**Min. mIoU**|**FPS**|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|GSVNet(l=2)|Video|SwiftNet-ResNet18|0.75|72.5|70.5|125|
+|TDNet|Video|BiSeNet-ResNet18|0.75|75.0|75.0|approx. 61|
+|BiSeNet|Image|ResNet-18|0.75|73.7|73.7|61|
+|BiSeNet|Image|Xception-39|0.75|69.0|69.0|105|
+|SwiftNet|Image|ResNet-18|0.75|74.4|74.4|63|
 
 ### Complexity
+|**Model**|**Backbone**|**Scale**|**# of Parameters**|**Avg. FLOPS**|
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+|GSVNet(l=4)|SwiftNet-ResNet18|0.75|48.8M|16.7G|
+|SwiftNet|ResNet18|0.75|47.2M|58.5G|
+|SwiftNet|ResNet18|0.5|47.2M|26.0G|
+|BiSeNet|ResNet18|0.75|49.0M|58.0G|
