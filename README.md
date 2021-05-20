@@ -2,7 +2,7 @@
 
 The code will be released soon...
 
-This is the official implementation of GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video
+This is the official implementation of [GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video](https://arxiv.org/abs/2103.08834)
 
 ## Supported Models
 - [TDNet](https://arxiv.org/abs/2004.01800)
