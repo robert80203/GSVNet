@@ -49,10 +49,12 @@ Move the downloaded weights to weights/
 ## Preparation of dataset - Cityscapes
 
 Please download the dataset from the officit site - [Download](https://www.cityscapes-dataset.com/)
-Modify the data_path in config/cityscapes.py
+
 ```
 data_path = './leftImg8bit_sequence_trainvaltest_2K/'
 ```
+
+Modify the data_path in config/cityscapes.py
 
 ## Training of GSVNet
 
