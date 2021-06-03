@@ -40,9 +40,9 @@ pip install -v --disable-pip-version-check --no-cache-dir ./
 
 |**Model**|**Pre-trained weight**|
 |:-----:|:-----:|
-- [BiSeNet](https://arxiv.org/abs/1808.00897) | [Download](https://drive.google.com/file/d/11tr04lZCWtU1dQXLCteEOSYnUE2REt4V/view?usp=sharing)
-- [SwiftNet](https://arxiv.org/abs/1903.08469) | [Download](https://drive.google.com/file/d/1_FxwIwK52OEMCx5gOz3LgFJTgX2J_rG7/view?usp=sharing)
-- [FlowNet2S](https://arxiv.org/abs/1612.01925) | [Download](https://drive.google.com/file/d/1A8FKDbMKORz9U_swRxLaCUFcmY4eAZYj/view?usp=sharing)
+|[BiSeNet](https://arxiv.org/abs/1808.00897) | [Download](https://drive.google.com/file/d/11tr04lZCWtU1dQXLCteEOSYnUE2REt4V/view?usp=sharing)|
+|[SwiftNet](https://arxiv.org/abs/1903.08469) | [Download](https://drive.google.com/file/d/1_FxwIwK52OEMCx5gOz3LgFJTgX2J_rG7/view?usp=sharing)|
+|[FlowNet2S](https://arxiv.org/abs/1612.01925) | [Download](https://drive.google.com/file/d/1A8FKDbMKORz9U_swRxLaCUFcmY4eAZYj/view?usp=sharing)|
 
 Move the downloaded weights to weights/
 
@@ -57,7 +57,8 @@ data_path = './leftImg8bit_sequence_trainvaltest_2K/'
 ## Training of GSVNet
 
 ```
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --master_port 1111 --nproc_per_node 2 python main.py --segnet <segnet_name> --checkname <SAVE_DIR>
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --master_port 1111 \ 
+--nproc_per_node 2 python main.py --segnet <segnet_name> --checkname <SAVE_DIR>
 ```
 
 ## Inference of GSVNet
