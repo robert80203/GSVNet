@@ -51,7 +51,7 @@ Move the downloaded weights to weights/
 Please download the dataset from the officit site - [Download](https://www.cityscapes-dataset.com/)
 
 ```
-data_path = './leftImg8bit_sequence_trainvaltest_2K/'
+data_path = './data/leftImg8bit_sequence_trainvaltest_2K/'
 ```
 
 Modify the data_path in config/cityscapes.py
