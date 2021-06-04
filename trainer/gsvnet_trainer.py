@@ -14,7 +14,7 @@ from trainer.base import Trainer
 from model.gsv.network import GuidedSpatiallyVaryingConv
 from model.warp.mc_mod import MC_Module_Batch
 from model.end2end import End2End
-from model.flownet import Flownets
+from model.flownet.networks import Flownets
 
 #from util.transforms import single as extended_transforms
 #from util.transforms.multi import 
