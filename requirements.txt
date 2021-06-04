@@ -1,0 +1,11 @@
+absl-py
+grpcio
+markdown
+werkzeug
+numpy
+Pillow
+scikit-learn
+tensorboardX
+torch==1.1.0
+torchvision==0.2.1
+tqdm
