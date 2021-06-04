@@ -60,16 +60,19 @@ Modify the data_path in config/cityscapes.py
 
 ```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --master_port 1111 \ 
---nproc_per_node 2 python main.py --segnet <segnet_name> --checkname <SAVE_DIR>
+--nproc_per_node 2 python main.py --segnet <segnet_name> --dataset <dataset_name> \
+--optical-flow-network <of_name> --checkname <SAVE_DIR>
 ```
 
-## Inference of GSVNet
-
-```
-python main.py --evaluate 1 --segnet <segnet_name> --batch-size 1 --resume 1
-```
 <segnet_name> = swiftnet/bisenet
+<dataset_name> = cityscapes_2k/camvid
+<of_name> = light/flownet
 
+## Inference of GSVNet on Cityscapes
+
+```
+python main.py --evaluate 1 --batch-size 1 --resume 1
+```
 
 ## Performance and Benchmarks
 
@@ -89,7 +92,7 @@ The experimental results were conducted on Nvidia GTX 1080Ti.
 |Ours-SN-R18(l=3)|Video|0.75|72.5|70.3|125|[Download](https://drive.google.com/file/d/1VIfO-T0EWhdOiHrorAppLZQFuMUwcjC6/view?usp=sharing)|
 |Ours-BN-R18(l=3)|Video|0.75|72.0|70.5|123|[Download](https://drive.google.com/file/d/16adWqQRmzpQFGP8-EmGKn_ctXP8PPQPO/view?usp=sharing)|
 |[TDNet-BN-R18](https://arxiv.org/abs/2004.01800) |Video|0.75|75.0|75.0|approx. 61||
-|[Accel-DL-R101](https://arxiv.org/abs/1807.06667)-18(l=5) |Video|1.0|72.1|None|2.2||
+|[Accel-DL-R101-18](https://arxiv.org/abs/1807.06667)(l=5) |Video|1.0|72.1|None|2.2||
 |BiSeNet-R18|Image|0.75|73.7|73.7|61||
 |BiSeNet-R18|Image|0.75|69.0|69.0|105||
 |SwiftNet-R18|Image|0.75|74.4|74.4|63||
